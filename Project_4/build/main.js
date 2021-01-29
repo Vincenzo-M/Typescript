@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Account_1 = require("./Account");
+var a1 = new Account_1.Account("Mario", "Biondi", 500);
+var a2 = new Account_1.Account("Lorenzo", "Oliveri", 1000);
+console.log(a1.toString());
+console.log(a2.toString());
+a1.sendMoney(100);
+console.log(a1.toString());
+a2.sendMoney(900);
+console.log(a2.toString());
